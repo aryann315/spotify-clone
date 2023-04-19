@@ -1,0 +1,463 @@
+h1, h2, .songName, .artistName, .songInfo, .artistInfo,.tr-heading,.dropdown-menu {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidenav {
+  display: inline-block;
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  color: grey;
+  position: fixed;
+  z-index: 1;
+} 
+
+.spotify-name-logo {
+  display: inline-block;
+}
+
+.spotify_logo {
+  float: left;
+  margin: 63% auto auto 62%;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.main-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+  margin: 16% auto auto 36%;
+  color: white;
+}
+
+.options {
+  padding-top: 9%;
+  padding-left: 5%;
+}
+
+.bttn {
+  color: #808080;
+  padding-top: 6%;
+}
+
+.bttn:hover {
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.opt-logo {
+  float: left;
+  margin: auto 8% auto 11%;
+  font-size: 1.2rem;
+}
+
+.opt-heading {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+  margin-top: 4px;
+}
+
+.horiz-line {
+  width: 80%;
+  color: #808080;
+  margin: 10% auto 0 8%;
+}
+
+.rightmenu {
+  background-color: #111111;
+  height: 100%;
+  width: 1730px;
+  position: fixed;
+  margin-left: 190px;
+  color: #fff;
+}
+
+.scroll {
+  padding-bottom: 10rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.Top-Hindi {
+  margin: 4% auto auto 3%;
+}
+
+.Top-English {
+  margin: 4% auto auto 3%;
+}
+
+.tbh-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.song-container {
+  margin-top: 15px;
+  height: 300px;
+  width: 190px;
+  margin-right: 30px;
+  border-radius: 5%;
+  background-color: #1A1A1A;
+  border-width: inherit;
+}
+
+.song-container:hover {
+  background-color: #292929;
+  cursor: pointer;
+}
+
+.song-img-container {
+  display: inline-block;
+  height: 180px;
+  width: 160px;
+  margin-top: 20px;
+  margin-left: 8%;
+  border-radius: 5%;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.songName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 6%;
+  margin-left: 9%;
+}
+
+.artistName {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-top: 2%;
+  margin-left: 9%;
+  color: #A4A4A4;
+}
+
+.green-play-btn {
+  margin-top: 150px;
+  margin-left: 90px;
+  font-size: 3rem;
+  color: #1DB954;
+  visibility: hidden;
+}
+
+.green-play-btn:hover {
+  transform: scale(1.07);
+  color: #18D15A;
+}
+
+.tri-play {
+  position: absolute;
+  margin-left: -32px;
+  margin-top: 11px;
+  color: black;
+  font-size: 1.59rem;
+}
+
+.song-container:hover .green-play-btn {
+  visibility: visible;
+  margin-top: 125px;
+  transition: all .2s ease-out;
+}
+
+.top-right-menu {
+  display: flex;
+  position: absolute;
+  right: 35px;
+  top: 30px;
+}
+
+.upgrade-button {
+  border-radius: 30px;
+  height: 35px;
+  width: 95px;
+  position: relative;
+  line-height: 0.6;
+  margin-right: 25px;
+  background-color: black;
+}
+
+.upgrade-button:hover {
+  background-color: black;
+  border-color: white;
+}
+
+.dropdown-button {
+  display:flex;
+  align-items: center;
+  border-radius: 50px;
+  height: 39px;
+  width: 180px;
+  background-color: black;
+}
+
+@media (max-width: 900px) {
+  .upgrade-button {
+    visibility: collapse;
+  }
+}
+
+@media (max-width: 800px) {
+  .dropdown-button {
+    visibility: collapse;
+  }
+}
+
+.tr-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.circle-img {
+  border-radius: 50px;
+  height: 19px;
+  width: 22px;
+  background-color: white;
+  background-image: url("images/avatar.png");
+  background-size: cover;
+}
+
+.userName{
+  margin: 0 30px 0 35px;
+}
+
+.dropdown-menu{
+  background-color: #2A2A2A;
+}
+
+.dropdown-item{
+  font-size: 0.8rem;
+  color: white;
+}
+
+.dropdown-item:hover{
+  background-color: #3B3B3B;
+  color: white;
+}
+
+.progress-div {
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #272727;
+  border: 0.7px solid #363636;
+  width: 100%;
+  height: 100px;
+  min-width: 1100px;
+}
+
+.songDetails {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.songPic {
+  display: inline-block;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+}
+
+.songInfo {
+  display: inline-block;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 16px;
+  margin-left: 12px;
+}
+
+.artistInfo {
+  color: #A4A4A4;
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  margin-left: 87px;
+}
+
+.fav-song {
+  display: inline-block;
+  color: #A4A4A4;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 65px;
+  visibility: hidden;
+}
+
+.fav-song:hover {
+  color: white;
+}
+
+.green-heart {
+  color: #1DB954;
+}
+
+.green-heart:hover {
+  color: #18D15A;
+}
+
+.progress-buttons {
+  color: white;
+  text-align: center;
+  margin-top: 22px;
+}
+
+#play-btn {
+  font-size: 2.2rem;
+  margin: 0 35px;
+}
+
+#play-btn:hover {
+  transform: scale(1.1);
+}
+
+.fb-btn {
+  font-size: 1.2rem;
+  color: #ABABAB;
+}
+
+.fb-btn:hover {
+  color: white;
+}
+
+#myProgressBar {
+  place-content: center;
+  display: flex;
+}
+
+.progress-slider {
+  position: relative;
+  width: 33%;
+}
+
+.progress-slider input {
+  position: absolute;
+  top: 13px;
+  width: 100%;
+  height: 5px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.progress-slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.progress-slider progress {
+  -webkit-appearance: none;
+  height: 5px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.progress-slider progress::-webkit-progress-bar {
+  background-color: #ABABAB;
+}
+
+.progress-slider progress::-webkit-progress-value {
+  background-color: white;
+}
+
+.progress-slider:hover input::-webkit-slider-thumb {
+  visibility: visible;
+}
+
+.progress-slider:hover progress::-webkit-progress-value {
+  background-color: #1DB954;
+}
+
+#volume-bar {
+  display: flex;
+  margin-top: -45px;
+  margin-left: 89%;
+}
+
+.volume-btn {
+  font-size: 0.9rem;
+  color: #ABABAB;
+  margin-top: 5.2px;
+}
+
+.volume-btn:hover {
+  color: white;
+}
+
+.volume-slider {
+  position: absolute;
+  margin-left: 35px;
+  width: 7%;
+}
+
+.volume-slider input {
+  position: absolute;
+  top: 14px;
+  height: 4px;
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.volume-slider input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.volume-slider progress {
+  -webkit-appearance: none;
+  height: 4px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.volume-slider progress::-webkit-progress-bar {
+  background-color: #ABABAB;
+}
+
+.volume-slider progress::-webkit-progress-value {
+  background-color: white;
+}
+
+.volume-slider:hover input::-webkit-slider-thumb {
+  visibility: visible;
+}
+
+.volume-slider:hover progress::-webkit-progress-value {
+  background-color: #1DB954;
+}
